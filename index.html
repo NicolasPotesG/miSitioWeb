@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Nicolas Potes Garcia" />
+		<meta name="description" content="Pagina web estilo biografia" />
+
+		<link rel="stylesheet" href="styles.css" />
+
+		<title>Mi sitio web!</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Nicolás Potes García</h1>
+			<img
+				src="imgTurq.jpg"
+				alt="Fotografía de Nicolás"
+				width="540"
+				height="300"
+			/>
+			<nav>
+				<ul>
+					<li>
+						<button type="button" class="button">
+							Mensaje de bienvenida
+						</button>
+					</li>
+					<li>
+						<button type="button" class="button">
+							Datos biográficos
+						</button>
+					</li>
+					<li>
+						<button type="button" class="button">
+							Datos académicos
+						</button>
+					</li>
+					<li>
+						<button type="button" class="button">
+							Sitios de interés
+						</button>
+					</li>
+					<li>
+						<button type="button" class="button">
+							Formulario de contacto
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div>
+				<article>
+					<h2 class="msjBienvenida">¡Bienvenido!</h2>
+					<p class="msjBienvenida">
+						Bienvenido a la página web de Nicolás, aquí podrás
+						encontrar información acerca de él y sus gustos. Espero
+						disfrutes!
+					</p>
+				</article>
+				<aside>
+					<h2>Música (sitios de interés)</h2>
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/EU0LljxpHIk"
+						frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+				</aside>
+			</div>
+			<div>
+				<article>
+					<h2>Datos biográficos</h2>
+					<table id="table">
+						<tr>
+							<th>Atributo</th>
+							<th>Descripción</th>
+						</tr>
+						<tr>
+							<td>Fecha de nacimiento</td>
+							<td>27 Septiembre 2000</td>
+						</tr>
+						<tr>
+							<td>Edad</td>
+							<td>19 años</td>
+						</tr>
+						<tr>
+							<td>Peso</td>
+							<td>74 kg</td>
+						</tr>
+						<tr>
+							<td>Altura</td>
+							<td>1.76 m</td>
+						</tr>
+					</table>
+				</article>
+				<div class="vertical"></div>
+				<article>
+					<h2>Datos Académicos</h2>
+					<br />
+					<br />
+					<ul>
+						<li>Colegio Salesiano San Juan Bosco</li>
+						<li>Universidad de los Andes</li>
+						<li>Cursos de inglés</li>
+						<li>Curso de Machine Learning</li>
+					</ul>
+				</article>
+			</div>
+			<div>
+				<article id="form">
+					<h2>Contacto</h2>
+					<form>
+						<label for="fname">Nombre</label>
+						<input
+							type="text"
+							id="fname"
+							name="firstname"
+							placeholder="Tu nombre..."
+						/>
+
+						<label for="lname">Apellido</label>
+						<input
+							type="text"
+							id="lname"
+							name="lastname"
+							placeholder="Tu apellido..."
+						/>
+
+						<label for="country">País</label>
+						<select id="country" name="country">
+							<option value="australia">Colombia</option>
+							<option value="canada">Canadá</option>
+							<option value="usa">Francia</option>
+						</select>
+
+						<input type="submit" value="Enviar" />
+					</form>
+				</article>
+			</div>
+		</main>
+		<footer>
+			<p>
+				Esta es la página de Nicolás Potes García. &copy
+			</p>
+			<br />
+			<a href="http://www.example.com/" target="_blank">
+				<img class="center" src="gitIcon.png" / width="60" height="60">
+			</a>
+		</footer>
+	</body>
+</html>
